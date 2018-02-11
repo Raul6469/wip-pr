@@ -1,0 +1,41 @@
+{
+  "name": "wip-pr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "probot run ./index.js",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Raul6469/wip-pr"
+  },
+  "keywords": [
+    "probot",
+    "probot-plugin"
+  ],
+  "author": "Raul6469",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Raul6469/wip-pr/issues"
+  },
+  "homepage": "https://github.com/Raul6469/wip-pr#readme",
+  "dependencies": {
+    "probot": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "localtunnel": "^1.8.3",
+    "semantic-release": "^12.2.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": "8"
+  }
+}
