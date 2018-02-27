@@ -6,6 +6,7 @@ const wipObject = {
   'description': 'Work in progress',
   'owner': 'user',
   'repo': 'testing-things',
+  'target_url': 'https://github.com/apps/wip-pr',
   'sha': 'sha',
   'state': 'failure'
 }
