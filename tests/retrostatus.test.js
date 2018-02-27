@@ -13,7 +13,7 @@ const wipObject = {
 
 const successObject = {
   'context': 'codereview/wip',
-  'description': 'A new commit has been pushed',
+  'description': 'New commits have been pushed',
   'owner': 'user',
   'repo': 'testing-things',
   'target_url': 'https://github.com/apps/wip-pr',
