@@ -11,6 +11,16 @@ const wipObject = {
   'state': 'failure'
 }
 
+const successObject = {
+  'context': 'codereview/wip',
+  'description': 'Ready for review',
+  'owner': 'user',
+  'repo': 'testing-things',
+  'target_url': 'https://github.com/apps/wip-pr',
+  'sha': 'sha',
+  'state': 'success'
+}
+
 describe('Checking if the PR is WIP', () => {
   let robot
   let github
@@ -26,7 +36,9 @@ describe('Checking if the PR is WIP', () => {
         createStatus: jest.fn()
       },
       issues: {
-        getIssueLabels: jest.fn()
+        getIssueLabels: jest.fn().mockReturnValue(Promise.resolve({
+          data: []
+        }))
       }
     }
 
@@ -60,5 +72,13 @@ describe('Checking if the PR is WIP', () => {
     await robot.receive(payload)
 
     expect(github.repos.createStatus).toHaveBeenCalledWith(wipObject)
+  })
+
+  it('Sets status to success if no wip', async () => {
+    payload.payload.action = 'opened'
+
+    await robot.receive(payload)
+
+    expect(github.repos.createStatus).toHaveBeenCalledWith(successObject)
   })
 })
