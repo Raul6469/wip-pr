@@ -1,5 +1,6 @@
 # wip-pr
 [![Build Status](https://travis-ci.org/Raul6469/wip-pr.svg?branch=master)](https://travis-ci.org/Raul6469/wip-pr)
+[![codecov](https://codecov.io/gh/Raul6469/wip-pr/branch/master/graph/badge.svg)](https://codecov.io/gh/Raul6469/wip-pr)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Raul6469/wip-pr.svg)](https://greenkeeper.io/)
 
 Derived version of the original [wip-bot](https://github.com/gr2m/wip-bot).
