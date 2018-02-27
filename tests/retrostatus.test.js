@@ -49,4 +49,14 @@ describe('Retrostatus', () => {
     expect(github.repos.createStatus).toHaveBeenCalledWith(wipObject)
     expect(github.repos.createStatus).toHaveBeenCalledWith(successObject)
   })
+
+  it('Does not try to set previous commit status when it is not a synchronize event', async () => {
+    payload.payload.pull_request.title = 'wip pr'
+    payload.payload.action = 'opened'
+
+    await robot.receive(payload)
+
+    expect(github.repos.createStatus).toHaveBeenCalledWith(wipObject)
+    expect(github.repos.createStatus).not.toHaveBeenCalledWith(successObject)
+  })
 })
