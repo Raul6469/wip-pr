@@ -39,4 +39,25 @@ describe('Checking if the PR is WIP', () => {
 
     expect(github.repos.createStatus).toHaveBeenCalledWith(wipObject)
   })
+
+  it('Detects wip in labels', async () => {
+    payload.payload.pull_request.title = 'classic title'
+
+    github.issues.getIssueLabels = jest.fn().mockReturnValue(Promise.resolve({
+      data: [
+        {
+          id: 208045946,
+          url: 'https://api.github.com/repos/octocat/Hello-World/labels/bug',
+          name: 'wip',
+          description: 'work in progress',
+          color: 'f29513',
+          default: true
+        }
+      ]
+    }))
+
+    await robot.receive(payload)
+
+    expect(github.repos.createStatus).toHaveBeenCalledWith(wipObject)
+  })
 })
