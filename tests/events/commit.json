@@ -1,0 +1,22 @@
+{
+    "event": "pull_request",
+    "payload": {
+      "action": "opened",
+      "pull_request": {
+        "number": 1,
+        "title": "pr title",
+        "head": {
+          "sha": "sha"
+        }
+      },
+      "repository": {
+        "name": "testing-things",
+        "owner": {
+          "login": "user"
+        }
+      },
+      "installation": {
+        "id": 1234
+      }
+    }
+  }
