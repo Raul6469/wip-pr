@@ -4,4 +4,6 @@
 
 Derived version of the original [wip-bot](https://github.com/gr2m/wip-bot).
 
-Supports WIP labels that contains `wip` or `do not merge`, and sets commit status to failure instead of pending.
+:sparkles: **Only sets the commit status to `failure` on the PR's head. When new commits are pushed, the `failure` status is removed from previous commits!**
+
+Also supports WIP labels that contains `wip` or `do not merge`.
