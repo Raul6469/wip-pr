@@ -1,6 +1,6 @@
 {
   "name": "wip-pr",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Raul6469/wip-pr#readme",
   "dependencies": {
-    "probot": "^5.0.0"
+    "probot": "^6.0.0"
   },
   "devDependencies": {
     "eslint": "^4.17.0",
