@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/Raul6469/wip-pr"
   },
+  "jest": {
+    "testURL": "http://localhost/"
+  },
   "keywords": [
     "probot",
     "probot-plugin"
@@ -33,7 +36,7 @@
     "eslint-plugin-node": "7.0.0",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1",
-    "jest": "22.4.2"
+    "jest": "22.4.4"
   },
   "engines": {
     "node": "8"
