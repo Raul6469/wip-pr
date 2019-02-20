@@ -3,5 +3,4 @@ node_modules
 private-key.pem
 .env
 .vscode
-package-lock.json
 coverage
