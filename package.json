@@ -28,7 +28,7 @@
   "homepage": "https://github.com/Raul6469/wip-pr#readme",
   "dependencies": {
     "jest": "22.4.4",
-    "probot": "6.0.0"
+    "probot": "7.5.1"
   },
   "devDependencies": {
     "eslint": "5.15.0",
